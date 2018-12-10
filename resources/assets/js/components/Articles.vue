@@ -79,9 +79,10 @@
 					})
 			},
 			deleteArticle(article) {
-				if (confirm('Are you sure ?')) {
+			
+				if (confirm('Are you sure of that ?')) {
 
-					
+					let id = article.id;
 					fetch(`api/article/${id}`,{
 						method:'DELETE'
 					}).then(res=>res.json())
